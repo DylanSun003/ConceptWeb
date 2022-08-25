@@ -1,0 +1,50 @@
+/* navbar css */
+.navbarList {
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.navbar-Item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+.nav-link {
+  margin: 0 1rem;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration-line: none;
+}
+.nav-link:hover {
+  text-decoration-line: underline;
+  color: white;
+}
+
+.nav-link:last-child {
+  margin-right: 60px;
+}
+
+.logo {
+  margin-left: 20px;
+  width: 80px;
+}
+
+.nav-link .btn {
+  padding: 5px 20px;
+  border: 0px;
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(120deg, rgba(122, 57, 243, 0.957), rgba(122, 57, 243), rgb(3, 194, 212)) right;
+  background-size: 200%;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link .btn:hover {
+  background-position: left;
+}

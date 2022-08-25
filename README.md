@@ -20,8 +20,7 @@ a. Download Node.js on your computer based on the computer system:
 ```https://nodejs.org/en/download/```
 
 b. Go to termial and run:
-```
-npm install -g npm```
+```npm install -g npm```
 (read more about this: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 c. When you finished step 'a' and 'b', you can now go to directory where you put the downloaded app package (Say you put the downloaded package on desktop): 

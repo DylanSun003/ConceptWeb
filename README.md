@@ -23,9 +23,9 @@ b. Go to termial and run:
 ```npm install -g npm```
 (read more about this: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-c. When you finished step 'a' and 'b', you can now go to directory where you put the downloaded app package (Say you put the downloaded package on desktop): 
+c. When you finished step 'a' and 'b', you can now go to directory where you put the downloaded app package (Say you put the downloaded package on desktop), typing ```npm install react``` when you at the terminal to install React package for running the app
 
-## 3. Run the web app
+## 3. How to navigate to the directory with terminal and run the web app
 
 * Open the terminal(MacOS by typing ```⌘ + space``` and enter "terminal" on the search bar)
 * After terminal opened, copy below command and paste on your terminal:
@@ -33,6 +33,7 @@ c. When you finished step 'a' and 'b', you can now go to directory where you put
 	```
 	cd ~ ; 
 	cd Desktop ; 
-	cd my-app ; 
-	npm run
+	cd rlab_web/my-app ;
+	npm install react ; 
+	npm start
 	```

@@ -15,13 +15,11 @@ const NavBar = (props) => {
           <NavLink className="nav-link" to="/about-us">
             About us
           </NavLink>
-          <NavLink className="nav-link" to="/contact">
-            Contact
+          <NavLink className="nav-link" to="/dao">
+            DAO
           </NavLink>
-          <NavLink className="nav-link" to="/sign-up">
-            <button type="button" className="btn btn-primary">
-              Sign Up/Log In
-            </button>
+          <NavLink className="nav-link" to="/faq">
+            FAQ
           </NavLink>
         </div>
       </nav>

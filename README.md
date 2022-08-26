@@ -1,6 +1,7 @@
-# Getting Started with Create React App 
+Copyright @RedD Labs
 
-> In the future we will make the step to run the web app much more easy, but for now, please bear with me, and if you have any question please ask us! Thanks!
+This is the draft(CHANGE) website project for RedD Labs. Please follow the instructions below to run the web app.
+> In the future we will make the step to run the web app much easier, but for now, please bear with us, and if you have any question please ask us! Thanks!
 
 ## 1. Clone/Download the app:
 	

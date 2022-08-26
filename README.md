@@ -34,6 +34,5 @@ c. When you finished step 'a' and 'b', you can now go to directory where you put
 	cd ~ ; 
 	cd Desktop ; 
 	cd rlab_web/my-app ;
-	npm install react ; 
 	npm start
 	```

@@ -14,7 +14,7 @@
 }
 
 .tail {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   display: flex;
   flex-direction: column;
   text-align: center;

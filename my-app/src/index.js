@@ -8,7 +8,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" exact element={<Main />} />
-      <Route path="*" element={<PageNotFound />} />
+      <Route path="/*" element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>
 );

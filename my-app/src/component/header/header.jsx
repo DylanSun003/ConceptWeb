@@ -6,7 +6,6 @@ import "./header.css";
 import imgMove from "../../img/metaverse.png";
 import imgHeader from "../../img/liquid_shape.png";
 import videoHeader from "../../img/marketing.mp4";
-import NavBar from "../navBar/NavBar";
 
 function Header() {
   let [width, setWidth] = useState(null);
@@ -29,8 +28,7 @@ function Header() {
   };
 
   return (
-    <div className="container header">
-      <NavBar />
+    <section className="container header" data-scroll-section>
       <div className="row intro">
         <video src={videoHeader} autoPlay playsInline muted loop></video>
         <Fade left>
@@ -45,24 +43,24 @@ function Header() {
             </p>
           </div>
         </Fade>
-        {/* <Fade right> */}
-        <div className="col col_right">
-          <img src={imgHeader} alt="" className="rightImage" />
-          <img
-            src={imgMove}
-            alt=""
-            onMouseMove={handleMouseMove}
-            className="imgMove"
-            style={{
-              "-webit-transform": `translate(${moveX}, ${moveY}) `,
-              "-moz-transform": `translate(${moveX}, ${moveY}) `,
-              transform: `translate(${moveX}, ${moveY}) `,
-            }}
-          />
-        </div>
-        {/* </Fade> */}
+        <Fade right>
+          <div className="col col_right">
+            <img src={imgHeader} alt="" className="rightImage" />
+            <img
+              src={imgMove}
+              alt=""
+              onMouseMove={handleMouseMove}
+              className="imgMove"
+              style={{
+                "-webit-transform": `translate(${moveX}, ${moveY}) `,
+                "-moz-transform": `translate(${moveX}, ${moveY}) `,
+                transform: `translate(${moveX}, ${moveY}) `,
+              }}
+            />
+          </div>
+        </Fade>
       </div>
-    </div>
+    </section>
   );
 }
 

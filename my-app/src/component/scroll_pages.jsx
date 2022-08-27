@@ -25,7 +25,7 @@ function ScrollPages() {
   return (
     <ScrollContainer>
       <ScrollPage>
-        <div style={{marginLeft: "45vw", width: "50vw"}}>
+        <div className="product" style={{marginLeft: "45vw", width: "50vw"}}>
           <Animator animation={Fade(0, 10)}>
             <div style={{paddingTop: "200px", height: "500px", color: "white"}}>
               <Animator animation={batch(Move(0, 200, 0, 100))}>

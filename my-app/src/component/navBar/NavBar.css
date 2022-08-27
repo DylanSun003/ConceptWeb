@@ -21,11 +21,22 @@
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration-line: none;
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background-size: 100% 0px, 0 3px;
+  background-position: 50% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 500ms;
 }
 .nav-link:hover {
-  text-decoration-line: underline;
   color: white;
+  background-size: 0% 1.5px, 100% 1.5px;
 }
+
+/* .nav-link:active {
+  text-decoration-line: underline;
+  color: yellow;
+} */
 
 .nav-link:last-child {
   margin-right: 60px;
@@ -39,7 +50,6 @@
 .nav-link .btn {
   padding: 5px 20px;
   border: 0px;
-  /* "to left" / "to right" - affects initial color */
   background: linear-gradient(120deg, rgba(122, 57, 243, 0.957), rgba(122, 57, 243), rgb(3, 194, 212)) right;
   background-size: 200%;
   transition: all 0.5s ease-in-out;

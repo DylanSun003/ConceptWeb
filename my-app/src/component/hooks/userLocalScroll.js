@@ -1,17 +1,17 @@
 import {useEffect} from "react";
 import LocomotiveScroll from "locomotive-scroll";
 
-function useLocalScroll(start) {
+function useLocalScroll() {
   useEffect(() => {
-    if (!start) return;
-
-    const scrollEl = document.querySelector(".main");
+    const scrollEl = document.querySelector("[data-scroll-section]");
     const scroll = new LocomotiveScroll({
       el: scrollEl,
-      smooth: true,
-      multiplier: 1,
+      // when smooth scrolling enable, if the viewport's weight greater than 1000px,
+      // there will be a c-scrollbar created and make the page destoried
+      // smooth: true,
+      // multiplier: 1,
     });
-  }, [start]);
+  }, []);
 }
 
 export default useLocalScroll;

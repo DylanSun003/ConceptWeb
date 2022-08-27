@@ -43,22 +43,22 @@ function Header() {
             </p>
           </div>
         </Fade>
-        <Fade right>
-          <div className="col col_right">
-            <img src={imgHeader} alt="" className="rightImage" />
-            <img
-              src={imgMove}
-              alt=""
-              onMouseMove={handleMouseMove}
-              className="imgMove"
-              style={{
-                "-webit-transform": `translate(${moveX}, ${moveY}) `,
-                "-moz-transform": `translate(${moveX}, ${moveY}) `,
-                transform: `translate(${moveX}, ${moveY}) `,
-              }}
-            />
-          </div>
-        </Fade>
+        {/* <Fade right> */}
+        <div className="col col_right">
+          <img src={imgHeader} alt="" className="rightImage" />
+          <img
+            src={imgMove}
+            alt=""
+            onMouseMove={handleMouseMove}
+            className="imgMove"
+            style={{
+              "-webit-transform": `translate(${moveX}, ${moveY}) `,
+              "-moz-transform": `translate(${moveX}, ${moveY}) `,
+              transform: `translate(${moveX}, ${moveY}) `,
+            }}
+          />
+        </div>
+        {/* </Fade> */}
       </div>
     </section>
   );

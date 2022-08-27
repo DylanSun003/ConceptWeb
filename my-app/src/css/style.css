@@ -17,6 +17,7 @@ section {
 
 .main {
   padding: 0;
+  max-height: fit-content;
   /* overflow: hidden; */
 }
 

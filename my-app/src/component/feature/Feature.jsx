@@ -11,7 +11,7 @@ function Feature() {
       </div>
       <div className="featured-grid">
         <div className="featured-row-layout">
-          <h6>green</h6>
+          <h6>HelloWorld</h6>
           <img src={m1[0]} alt="" data-scroll data-scroll-repeat />
         </div>
         <div className="featured-column-layout">

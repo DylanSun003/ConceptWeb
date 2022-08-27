@@ -12,7 +12,8 @@ import useLocoScroll from "./component/hooks/userLocalScroll";
 import "./css/style.css";
 
 function Main() {
-  useLocoScroll(true);
+  useLocoScroll();
+
   return (
     <section className="main" data-scroll-section>
       <NavBar />

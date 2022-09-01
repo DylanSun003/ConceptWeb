@@ -1,10 +1,15 @@
 .featured-section {
-  padding: 300px 50px;
+  margin: 200px 50px;
   color: white;
+  z-index: 1;
+  border: 5px solid red;
 }
 
 .featured-header {
+  position: relative;
   padding-bottom: 10px;
+  z-index: 1;
+  width: fit-content;
 }
 .featured-header h3 {
   font-size: 5rem;
@@ -12,6 +17,7 @@
 }
 
 .featured-grid {
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
@@ -21,16 +27,35 @@
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
+  background-image: linear-gradient(
+    75deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 33.33%,
+    rgba(255, 255, 255, 0) 66.7%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 300% 100%;
+  background-position-x: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 1s background-position-x ease-in-out;
+}
+
+.featured-section h6.is-inview {
+  background-position-x: 0%;
 }
 
 .featured-grid img {
   transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 2;
 }
 
 .featured-row-layout,
 .featured-column-layout {
   display: grid;
   gap: 10px;
+  width: fit-content;
 }
 
 .featured-row-layout img {
@@ -39,7 +64,7 @@
   object-fit: cover;
 }
 
-.featured-row-layout img.is-inview {
+.featured-row-layout.is-inview img {
   clip-path: inset(0% 0% 0% 0%);
 }
 
@@ -50,11 +75,11 @@
 
 .featured-column-layout img {
   clip-path: inset(0% 0% 0% 100%);
-  width: 100%;
+  width: 90vh;
   object-fit: cover;
 }
 
-.featured-column-layout img.is-inview {
+.featured-column-layout.is-inview img {
   clip-path: inset(0% 0% 0% 0%);
 }
 

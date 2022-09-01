@@ -7,23 +7,24 @@ import Feature from "./component/feature/Feature";
 import About from "./component/about/About";
 import Gallery from "./component/gallery/Gallery";
 import Footer from "./component/mission/Footer";
-import useLocoScroll from "./component/hooks/userLocalScroll";
+import ReactFluidAnimation from "@usertive/react-fluid-animation";
 
 import "./css/style.css";
 
 function Main() {
-  useLocoScroll();
-
   return (
-    <section className="main" data-scroll-section>
-      <NavBar />
-      <Header />
-      {/* <ScrollPages /> */}
-      <Feature />
-      <About />
-      <Gallery />
-      <Footer />
-      <TailBar />
+    <section className="main">
+      <ReactFluidAnimation className="upperLevel" />
+      <div className="underLevel">
+        <NavBar />
+        <Header />
+        {/* <ScrollPages /> */}
+        <Feature />
+        <About />
+        <Gallery />
+        <Footer />
+        <TailBar />
+      </div>
     </section>
   );
 }

@@ -8,7 +8,7 @@ body {
   list-style: none;
   box-sizing: border-box;
   line-height: 1;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 section {
@@ -27,3 +27,35 @@ section {
   width: 100%;
   height: 100%;
 }
+
+.upperLevel {
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  /* z-index: 0; */
+  /* background-color: transparent; */
+}
+
+.underLevel {
+  z-index: 1;
+}
+
+.underLevel p,
+.underLevel h1,
+.underLevel h2,
+.underLevel h3,
+.underLevel h4,
+.underLevel h5,
+.underLevel h6 {
+  z-index: 1;
+  position: relative;
+}
+
+.underLevel img {
+  z-index: 1;
+}
+
+/* .underLevel div,
+.underLevel section {
+  background-color: transparent;
+} */

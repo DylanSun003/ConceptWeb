@@ -12,24 +12,25 @@ const TailBar = () => {
   };
 
   return (
-    <div className="tail">
+    <section className="tail">
       <img src={top} alt="" className="top" onClick={scrollToTop} />
-
-      <NavLink className="nav-tail-item" to="/">
-        © 2022 RLab
-      </NavLink>
-      <div className="logo-block">
-        <NavLink className="nav-tail-item" to={{pathname: "/"}} target="_blank">
-          <img src={github} alt="githublogo" className="github-logo" />
+      <div className="tail-info">
+        <NavLink className="nav-tail-item" to="/">
+          © 2022 RLab
         </NavLink>
-        <NavLink className="nav-tail-item" to={{pathname: "/"}} target="_blank">
-          <img src={linkin} alt="linkin" className="github-logo" />
-        </NavLink>
-        <NavLink className="nav-tail-item" to={{pathname: "/"}} target="_blank">
-          <img src={facebook} alt="linkin" className="github-logo" />
-        </NavLink>
+        <div className="logo-block">
+          <NavLink className="nav-tail-item" to={{pathname: "/"}} target="_blank">
+            <img src={github} alt="githublogo" className="github-logo" />
+          </NavLink>
+          <NavLink className="nav-tail-item" to={{pathname: "/"}} target="_blank">
+            <img src={linkin} alt="linkin" className="github-logo" />
+          </NavLink>
+          <NavLink className="nav-tail-item" to={{pathname: "/"}} target="_blank">
+            <img src={facebook} alt="linkin" className="github-logo" />
+          </NavLink>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

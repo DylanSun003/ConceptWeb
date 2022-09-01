@@ -28,9 +28,9 @@ function Header() {
   };
 
   return (
-    <section className="container header" data-scroll-section>
+    <section className="container header">
       <div className="row intro">
-        <video src={videoHeader} autoPlay playsInline muted loop></video>
+        {/* <video src={videoHeader} autoPlay playsInline muted loop></video> */}
         <Fade left>
           <div className="col col_left">
             <h4>This is RLab</h4>
@@ -43,22 +43,22 @@ function Header() {
             </p>
           </div>
         </Fade>
-        {/* <Fade right> */}
-        <div className="col col_right">
-          <img src={imgHeader} alt="" className="rightImage" />
-          <img
-            src={imgMove}
-            alt=""
-            onMouseMove={handleMouseMove}
-            className="imgMove"
-            style={{
-              "-webit-transform": `translate(${moveX}, ${moveY}) `,
-              "-moz-transform": `translate(${moveX}, ${moveY}) `,
-              transform: `translate(${moveX}, ${moveY}) `,
-            }}
-          />
-        </div>
-        {/* </Fade> */}
+        <Fade right>
+          <div className="col col_right">
+            <img src={imgHeader} alt="" className="rightImage" />
+            <img
+              src={imgMove}
+              alt=""
+              onMouseMove={handleMouseMove}
+              className="imgMove"
+              style={{
+                "-webit-transform": `translate(${moveX}, ${moveY}) `,
+                "-moz-transform": `translate(${moveX}, ${moveY}) `,
+                transform: `translate(${moveX}, ${moveY}) `,
+              }}
+            />
+          </div>
+        </Fade>
       </div>
     </section>
   );

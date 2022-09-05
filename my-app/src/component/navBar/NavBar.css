@@ -1,14 +1,27 @@
 /* navbar css */
 .navbarList {
-  min-height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 0;
   width: 100%;
   z-index: 2;
-  /* background-color: rgba(255, 255, 255, 0.2); */
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  background-color: rgba(0, 0, 0, 0.722);
+  flex-direction: row;
+  bottom: 0px;
+  height: 60px;
+}
+
+.navbarList.is-at-top {
+  position: fixed;
+  top: 0px;
+  transition: transform 0.6s;
+}
+
+.navbarList.is-at-top.is-out {
+  transform: translateY(-100px);
 }
 
 .navbar-Item {
@@ -37,7 +50,9 @@
 .nav-link {
   margin: 0 1rem;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 1rem;
   cursor: pointer;
   position: relative;
   text-decoration: none;

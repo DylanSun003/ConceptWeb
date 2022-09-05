@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import ScrollPages from "./component/scroll_pages";
-import NavBar from "./component/navBar/NavBar";
 import Header from "./component/header/header";
 import TailBar from "./component/tailBar/TailBar";
 import Feature from "./component/feature/Feature";
@@ -12,11 +11,13 @@ import ReactFluidAnimation from "@usertive/react-fluid-animation";
 import "./css/style.css";
 
 function Main() {
+  const defaultConfig = {
+    splatRadius: 0.005,
+  };
   return (
     <section className="main">
-      <ReactFluidAnimation className="upperLevel" />
+      <ReactFluidAnimation config={defaultConfig} className="upperLevel" />
       <div className="underLevel">
-        <NavBar />
         <Header />
         {/* <ScrollPages /> */}
         <Feature />

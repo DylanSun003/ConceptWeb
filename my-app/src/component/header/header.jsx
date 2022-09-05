@@ -1,17 +1,23 @@
 import React, {useState, useEffect} from "react";
 import Fade from "react-reveal/Fade";
 
-import "./header.css";
-
 import imgMove from "../../img/metaverse.png";
 import imgHeader from "../../img/liquid_shape.png";
-import videoHeader from "../../img/marketing.mp4";
+import PreHeader from "./preHeader";
+import useOnScreen from "../hooks/useOnScreen";
+import TypeWriter from "../TypeWriter/TypeWriter";
+
+import "./header.css";
+import {useRef} from "react";
 
 function Header() {
   let [width, setWidth] = useState(null);
   let [height, setHight] = useState(null);
   let [moveX, setX] = useState(null);
   let [moveY, setY] = useState(null);
+
+  let nextHeader = useRef(null);
+  let onScreen = useOnScreen(nextHeader, 0.1);
 
   useEffect(() => {
     window.addEventListener("resize", updateWidndowDimensions());
@@ -28,24 +34,20 @@ function Header() {
   };
 
   return (
-    <section className="container header">
+    <section className="container header" ref={nextHeader}>
+      <PreHeader nextPage={onScreen} />
       <div className="row intro">
-        {/* <video src={videoHeader} autoPlay playsInline muted loop></video> */}
         <Fade left>
           <div className="col col_left">
-            <h4>This is RLab</h4>
-            <h2>
-              The future of Web3, The new NFT, presented by <span>RLab</span>.
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, aut. Adipisci fuga rerum sint sequi praesentium mollitia! Quia
-              impedit numquam doloremque quae dolor incidunt illum. Molestias nostrum molestiae aliquam eos..
-            </p>
+            <h1>
+              RED<span style={{color: "red"}}>D</span> LABS
+            </h1>
+            <TypeWriter texts={["Playing with your NFTs.", "Making friends with your NFTs.", "Sharing with your NFTs."]} />
           </div>
         </Fade>
         <Fade right>
           <div className="col col_right">
-            <img src={imgHeader} alt="" className="rightImage" />
+            {/* <img src={imgHeader} alt="" className="rightImage" /> */}
             <img
               src={imgMove}
               alt=""

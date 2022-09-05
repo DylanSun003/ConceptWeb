@@ -1,0 +1,15 @@
+.mark {
+  border-right: 2px solid rgb(255, 50, 50);
+  padding: 0;
+  animation: curson 1s step-end infinite;
+}
+
+@keyframes curson {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

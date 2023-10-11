@@ -41,13 +41,14 @@ function About() {
   return (
     <section className="about-section" ref={divAbout}>
       <Fade>
-        <h6 className="section-header">What We know RedD Lab</h6>
+        <h3 className="section-header">
+          MIS<span style={{color: "red"}}>S</span>ION
+        </h3>
       </Fade>
       <div className="sticky" ref={stickyDiv}>
         <p ref={content}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis, fugiat laboriosam alias dolores repellendus. Autem totam porro
-          aut recusandae, eius, eos quo ea velit perferendis atque tempore odio eum. Animi dolorum quidem hic rem architecto, ducimus omnis eaque quae
-          excepturi facere, neque odio consequuntur maxime cumque! Nulla, suscipit fuga.
+          RedD Labs is committed to exploring a richer interactive NFT experience. Through us, everyone can create a new world by setting the methods
+          of their metaverses. We try to provide the tool that everyone has the right to design the dream.
         </p>
       </div>
     </section>

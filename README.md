@@ -1,8 +1,3 @@
-Copyright @RedD Labs
-
-This is the draft(CHANGE) website project for RedD Labs. Please follow the instructions below to run the web app.
-> In the future we will make the step to run the web app much easier, but for now, please bear with us, and if you have any question please ask us! Thanks!
-
 ## 1. Clone/Download the app:
 	
 ### You first need to has the App save on your computer:
